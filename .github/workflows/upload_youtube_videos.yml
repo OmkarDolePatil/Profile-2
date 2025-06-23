@@ -6,8 +6,8 @@ on:
   
   # Daily scheduled runs
   schedule:
-    # Run daily at 2 PM UTC (14:00)
-    - cron: '0 14 * * *'
+    # Run daily at 5 PM UTC (17:00)
+    - cron: '0 17 * * *'
 
 # This workflow handles anime content uploads for educational purposes only
 jobs:
@@ -43,8 +43,8 @@ jobs:
           # Define all channels in order of priority
           # Using multiline output format to preserve spaces in channel names
           echo "channels<<EOF" >> $GITHUB_OUTPUT
-          echo "Explainshortguy" >> $GITHUB_OUTPUT
-          echo "FlickFlash" >> $GITHUB_OUTPUT
+          echo "ShortsExplain" >> $GITHUB_OUTPUT
+          echo "Shorts_Explain" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
           
       - name: Process channels sequentially

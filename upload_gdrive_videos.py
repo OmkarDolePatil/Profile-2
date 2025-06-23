@@ -72,7 +72,7 @@ UPLOAD_TRACKING_COLUMNS = [
 def get_google_drive_credentials():
     """Get credentials for Google Drive and Sheets API."""
     # Google Drive link for credentials.json
-    CREDENTIALS_DRIVE_LINK = "https://drive.google.com/file/d/1agtOx7TiiugfS_vKEi_2-esFo2deWHzm/view?usp=sharing"
+    CREDENTIALS_DRIVE_LINK = "https://drive.google.com/file/d/11hv_AGVPxlvTTleab4eXdfcfDVBDtF9F/view?usp=sharing"
     credentials_file = os.path.join('gd', 'credentials.json')
     
     # Try to download from Google Drive first
@@ -122,8 +122,8 @@ def get_youtube_credentials(channel_id=None, channel_name=None):
     
     # Channel name to Drive file ID mapping
     CHANNEL_DRIVE_LINKS = {
-        "Explainshortguy": "https://drive.google.com/file/d/1FxCaBdVbYTfJnDYMnQx10aWQbLv69-pN/view?usp=sharing",
-        "FlickFlash": "https://drive.google.com/file/d/1tHC8392mvPeLqzYZISJML4JGzJFCypvF/view?usp=sharing"
+        "ShortsExplain": "https://drive.google.com/file/d/15j2UX3cdJMQTuVkr5nLcyTjWmp-xY5bP/view?usp=sharing",
+        "Shorts_Explain": "https://drive.google.com/file/d/1nwApVRPCx1IzF8NfReHJLlqUTPbtZiqf/view?usp=sharing"
     }
     
     if not channel_name and not channel_id:
@@ -189,8 +189,8 @@ def list_available_youtube_channels():
     """List all channels that have saved YouTube tokens on Google Drive."""
     # Channel token Google Drive links
     CHANNEL_DRIVE_LINKS = {
-        "Explainshortguy": "https://drive.google.com/file/d/1FxCaBdVbYTfJnDYMnQx10aWQbLv69-pN/view?usp=sharing",
-        "FlickFlash": "https://drive.google.com/file/d/1tHC8392mvPeLqzYZISJML4JGzJFCypvF/view?usp=sharing"
+        "ShortsExplain": "https://drive.google.com/file/d/15j2UX3cdJMQTuVkr5nLcyTjWmp-xY5bP/view?usp=sharing",
+        "Shorts_Explain": "https://drive.google.com/file/d/1nwApVRPCx1IzF8NfReHJLlqUTPbtZiqf/view?usp=sharing"
     }
     
     print("\nAvailable YouTube Channels:")
