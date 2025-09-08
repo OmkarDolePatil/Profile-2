@@ -72,7 +72,7 @@ UPLOAD_TRACKING_COLUMNS = [
 def get_google_drive_credentials():
     """Get credentials for Google Drive and Sheets API."""
     # Google Drive link for credentials.json
-    CREDENTIALS_DRIVE_LINK = "https://drive.google.com/file/d/1agtOx7TiiugfS_vKEi_2-esFo2deWHzm/view?usp=sharing"
+    CREDENTIALS_DRIVE_LINK = "https://drive.google.com/file/d/11hv_AGVPxlvTTleab4eXdfcfDVBDtF9F/view?usp=sharing"
     credentials_file = os.path.join('gd', 'credentials.json')
     
     # Try to download from Google Drive first
